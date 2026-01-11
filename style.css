@@ -1,0 +1,146 @@
+/* 1. Reset & Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* 2. Clean, Modern Background */
+body {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 3. Header with Purple Accent */
+.heading {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.heading h1 {
+    font-size: 2.2rem;
+    color: #2c3e50;
+    border-bottom: 4px solid #8e44ad; 
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* 4. The Grid Layout */
+.contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1500px;
+}
+
+/* 5. The "Clean" Card */
+.contact {
+    background: white;
+    width: 240px;
+    padding: 25px;
+    border-radius: 12px;
+    
+    box-shadow: 0 6px 8px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.1);
+    border: 1px solid #eaeaea;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.contact:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(142, 68, 173, 0.15);
+    border-color: #d2b4de;
+    background-color: #fbf6fc;
+}
+
+/* 6. Image Styling */
+.contact img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    outline: 2px solid #8e44ad; 
+    margin-bottom: 10px;
+}
+
+/* 7. Text Styling */
+.contact h2 {
+    font-size: 1.25rem;
+    color: #2d3436;
+    font-weight: 700;
+}
+
+.contact p {
+    font-size: 0.9rem;
+    margin: 2px 0;
+    display: flex; 
+    align-items: center; 
+    gap: 5px;
+}
+
+/* 8. Links (Actionable items) */
+.contact a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.contact a:hover {
+    background-color: #f3e5f5;
+    color: #8e44ad;
+}
+
+/* 9. Input Form Styling */
+.input-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.input-group input {
+    padding: 10px 15px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #8e44ad;
+}
+
+.input-group button {
+    padding: 10px 20px;
+    background-color: #8e44ad;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.input-group button:hover {
+    background-color: #732d91;
+    transform: scale(1.05);
+}
