@@ -7,13 +7,13 @@ const contacts = [
   },
   {
     name: "Kim Seokjin",
-    image: "./images/jin.jpg",
+    image: "./images/Jin.jpg",
     mobile: 9543218760,
     email: "jinnie@wwh.com",
   },
   {
     name: "Min Yoongi",
-    image: "./images/suga.jpg",
+    image: "./images/Suga.jpg",
     mobile: 4329876510,
     email: "meow@savage.com",
   },
